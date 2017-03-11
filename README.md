@@ -27,8 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-https://github.com/MelissaGarrett/CodePath--TipCalculator/blob/master/UserStory1.gif
-https://github.com/MelissaGarrett/CodePath--TipCalculator/blob/master/UserStory2.gif
+https://github.com/MelissaGarrett/CodePath--TipCalculator/blob/master/UserStory.gif
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
