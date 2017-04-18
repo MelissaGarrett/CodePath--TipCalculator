@@ -13,6 +13,7 @@
 		0105259D1E7335CD00E92C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0105259C1E7335CD00E92C95 /* Assets.xcassets */; };
 		010525A01E7335CD00E92C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0105259E1E7335CD00E92C95 /* LaunchScreen.storyboard */; };
 		010525A81E73798D00E92C95 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010525A71E73798D00E92C95 /* SettingsViewController.swift */; };
+		010525AA1E748D5900E92C95 /* BillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010525A91E748D5900E92C95 /* BillModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0105259F1E7335CD00E92C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		010525A11E7335CD00E92C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010525A71E73798D00E92C95 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		010525A91E748D5900E92C95 /* BillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				010525951E7335CC00E92C95 /* AppDelegate.swift */,
+				010525A91E748D5900E92C95 /* BillModel.swift */,
 				010525971E7335CC00E92C95 /* TipViewController.swift */,
 				010525A71E73798D00E92C95 /* SettingsViewController.swift */,
 				010525991E7335CD00E92C95 /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				010525981E7335CC00E92C95 /* TipViewController.swift in Sources */,
 				010525961E7335CC00E92C95 /* AppDelegate.swift in Sources */,
+				010525AA1E748D5900E92C95 /* BillModel.swift in Sources */,
 				010525A81E73798D00E92C95 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				010525A61E7335CD00E92C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

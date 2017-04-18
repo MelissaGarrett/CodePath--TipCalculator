@@ -10,27 +10,36 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    var tipSelection: Int!
-
     @IBOutlet weak var segControl: UISegmentedControl!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var numInPartyLabel: UILabel!
+    
+    var tipSelection: Int = 0
+    var numInParty: Int = 1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad() 
 
         // Do any additional setup after loading the view.
-        
-        let defaults = UserDefaults.standard
-        tipSelection = defaults.integer(forKey: "TipSelected")
-        
         segControl.selectedSegmentIndex = tipSelection
+        stepper.value = Double(numInParty)
+        numInPartyLabel.text = "\(numInParty) in party"
     }
     
     @IBAction func segControlChanged(_ sender: Any) {
-        let defaults = UserDefaults.standard
         tipSelection = segControl.selectedSegmentIndex
-        defaults.set(tipSelection, forKey: "TipSelected")
+    }
+        
+    @IBAction func stepperChanged(_ sender: UIStepper) {
+        numInParty = Int(sender.value)
+        numInPartyLabel.text = "\(numInParty) in party"
     }
     
+    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+            
     /*
     // MARK: - Navigation
 
